@@ -1,2 +1,2 @@
 #!/bin/sh
-./arduino.sh --verbose --port `cat port` --board `cat board`
+../arduino.sh --verbose --upload --port `cat ../port` --board `cat ../board` "$@"
