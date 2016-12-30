@@ -24,7 +24,7 @@ ARDUINO_MODEL = nano
 # based on the serial number etc. of the USB device.
 # See e.g. 97-avr-ftdi.rules from the same download location as this Makefile.
 #PORT =		/dev/ttyUSB0
-PORT =		/dev/cu.usbserial-A1014UW0
+PORT =		$(shell echo /dev/cu.wchusbserial*)
 
 # Arduino variant (for Arduino 1.0+). Makefile.inc makes educated guess from ARDUINO_MODEL
 # Directory containing the pins_arduino.h file.
